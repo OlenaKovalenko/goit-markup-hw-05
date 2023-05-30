@@ -126,6 +126,10 @@ button {
 }
 
 .logotype {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
   margin-right: 76px;
 
   font-family: "Raleway", sans-serif;
