@@ -542,6 +542,10 @@ button {
   letter-spacing: 0.04em;
   border: 1px solid #e7e9fc;
   border-radius: 4px;
+
+  transition: color var(--transition-dur-and-func),
+    background-color var(--transition-dur-and-func),
+    box-shadow var(--transition-dur-and-func);
 }
 
 .portfolio-button:hover,
@@ -571,17 +575,20 @@ button {
 
   border: 1px solid #e7e9fc;
   border-top: none;
-  /* outline: 1px solid teal; */
-}
 
-.portfolio-cards-link {
-  display: block;
+  transition: border-color var(--transition-dur-and-func);
 }
 
 .portfolio-cards-link:hover .cards-wrappig,
 .portfolio-cards-link:focus .cards-wrappig {
   border: 1px solid #f4f4fd;
   border-top: none;
+}
+
+.portfolio-cards-link {
+  display: block;
+
+  transition: box-shadow var(--transition-dur-and-func);
 }
 
 .portfolio-cards-link:hover,
