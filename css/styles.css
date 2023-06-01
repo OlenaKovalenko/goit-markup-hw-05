@@ -269,6 +269,8 @@ button {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
+
+  transition: background-color var(--transition-dur-and-func);
 }
 
 .hero-btn:hover,
@@ -375,6 +377,8 @@ button {
   height: 100%;
   border-radius: 50%;
   background-color: var(--primary-brand-color);
+
+  transition: background-color var(--transition-dur-and-func);
 }
 
 .team-soc-icon {
@@ -412,6 +416,9 @@ button {
   border: 1px solid #8e8f99;
   border-radius: 4px;
   color: #8e8f99;
+
+  transition: color var(--transition-dur-and-func),
+    border-color var(--transition-dur-and-func);
 }
 
 .customers-icon {
@@ -490,6 +497,8 @@ button {
   height: 100%;
   border-radius: 50%;
   background-color: var(--primary-brand-color);
+
+  transition: background-color var(--transition-dur-and-func);
 }
 
 .footer-soc-icon {
