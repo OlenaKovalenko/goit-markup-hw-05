@@ -604,6 +604,7 @@ button {
   background-color: var(--primary-brand-color);
 }
 
-.portfolio-cards-link:hover .portfolio-cards-cover-text {
+.portfolio-cards-link:hover .portfolio-cards-cover-text,
+.portfolio-cards-link:focus .portfolio-cards-cover-text {
   transform: translateY(0);
 }
