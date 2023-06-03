@@ -182,7 +182,7 @@ button {
 .header-nav-link::after {
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -1px;
 
   transform: scaleX(0);
   transition: transform var(--transition-dur-and-func);
@@ -577,12 +577,14 @@ button {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
 
-  transition: background-color var(--transition-dur-and-func);
+  transition: background-color var(--transition-dur-and-func),
+    border var(--transition-dur-and-func);
 }
 
 .modal-close-btn:hover,
 .modal-close-btn:focus {
   background-color: var(--accent-color);
+  border: none;
 }
 
 .modal-close-icon {
@@ -630,6 +632,7 @@ button {
 
   transition: color var(--transition-dur-and-func),
     background-color var(--transition-dur-and-func),
+    border-color var(--transition-dur-and-func),
     box-shadow var(--transition-dur-and-func);
 }
 
@@ -697,9 +700,7 @@ button {
   transition: transform var(--transition-dur-and-func);
 
   height: 100%;
-  padding-top: 40px;
-  padding-right: 32px;
-  padding-left: 32px;
+  padding: 40px 32px;
 
   font-weight: 400;
   font-size: 16px;
